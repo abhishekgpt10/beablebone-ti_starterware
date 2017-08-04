@@ -1,0 +1,407 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:measureAllChildren="false" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="482dp"
+        android:background="@drawable/background1"
+        android:orientation="vertical" >
+        
+        <Switch
+            android:id="@+id/led2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/led1"
+            android:layout_alignBottom="@+id/led1"
+            android:layout_alignParentRight="true"
+            android:text="LED_2"
+            android:textColor="#FF33B5E5"
+            android:color="#FFFFFF" />
+
+        <Switch
+            android:id="@+id/led4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/led3"
+            android:layout_alignParentRight="true"
+              android:textColor="#FF33B5E5"
+            android:text="LED_4" />
+
+        <Switch
+            android:id="@+id/gpio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gpio_2"
+            android:layout_below="@+id/gpio_2"
+            android:text="Gpio_3  "
+            android:textColor="#FFFF4444" />
+        
+        <Switch
+            android:id="@+id/gpio_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gpio_2"
+            android:layout_below="@+id/gpio_3"
+            android:text="Gpio_6  "
+            android:textColor="#FFFF4444" />
+
+        <Switch
+            android:id="@+id/gpio_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gpio_6"
+            android:layout_below="@+id/gpio_6"
+            android:text="Gpio_7  "
+            android:textColor="#FFFF4444" />
+        
+        <Switch
+            android:id="@+id/gpio_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gpio_12"
+            android:layout_below="@+id/gpio_12"
+            android:text="Gpio_13"
+            android:textColor="#FFFF4444" />
+         
+          <Switch
+              android:id="@+id/gpio_14"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/gpio_13"
+              android:layout_below="@+id/gpio_13"
+              android:text="Gpio_14"
+              android:textColor="#FFFF4444" />
+
+          <Switch
+              android:id="@+id/gpio_15"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/gpio_14"
+              android:layout_below="@+id/gpio_14"
+              android:text="Gpio_15"
+              android:textColor="#FFFF4444" />
+
+          <Switch
+              android:id="@+id/led1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/textView31"
+              android:layout_marginTop="21dp"
+               android:textColor="#FF33B5E5"
+              android:text="LED_1" />
+
+          <Switch
+              android:id="@+id/led3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/led2"
+              android:layout_marginTop="18dp"
+                android:textColor="#FF33B5E5"
+              android:text="LED_3" />
+
+          <CheckBox
+              android:id="@+id/cbr3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/cbr2"
+              android:layout_below="@+id/gpio_2"
+              android:text="" />
+
+          <CheckBox
+              android:id="@+id/cbr6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/gpio_6"
+              android:layout_alignLeft="@+id/cbr3"
+              android:text="" />
+
+          <CheckBox
+              android:id="@+id/cbr7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/gpio_7"
+              android:layout_alignLeft="@+id/cbr6"
+              android:text="" />
+
+          <CheckBox
+              android:id="@+id/cbr14"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/cbr15"
+              android:layout_below="@+id/gpio_13"
+              android:text="" />
+
+          <CheckBox
+              android:id="@+id/cbr13"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/cbr12"
+              android:layout_below="@+id/cbr12"
+              android:text="" />
+
+          <CheckBox
+              android:id="@+id/cbr12"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/gpio_12"
+              android:layout_alignLeft="@+id/cbr7"
+              android:text="" />
+
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/gpio_2"
+              android:layout_alignParentTop="true"
+              android:layout_marginTop="24dp"
+              android:text="       RTC"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="#FFFFFF" />
+
+          <TextView
+              android:id="@+id/rtc_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/textView1"
+              android:layout_toRightOf="@+id/led1"
+              android:text="Medium Text"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#FFAA66CC"
+              android:textSize="20dp" />
+
+          <TextView
+              android:id="@+id/textView31"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/rtc_text"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="34dp"
+              android:text="LED CONTROL"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="#FF0000" />
+
+          <TextView
+              android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/textView4"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="22dp"
+              android:text="GPIO"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="#FF0099CC" />
+
+          <Switch
+              android:id="@+id/gpio_2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/textView5"
+              android:layout_marginTop="38dp"
+              android:layout_toLeftOf="@+id/wd"
+              android:text="Gpio_2  "
+              android:textColor="#FFFF4444" />
+
+          <Switch
+              android:id="@+id/gpio_12"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/gpio_7"
+              android:layout_below="@+id/gpio_7"
+              android:text="Gpio_12"
+              android:textColor="#FFFF4444" />
+
+          <TextView
+              android:id="@+id/textView8"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/textView6"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="23dp"
+              android:text="WRITE"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="#FFFFFF" />
+
+          <CheckBox
+              android:id="@+id/cbw2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/gpio_2"
+              android:layout_alignLeft="@+id/textView8" />
+
+          <CheckBox
+              android:id="@+id/cbr2"
+              android:textColor="#FFFFFF"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/gpio_2"
+              android:layout_alignBottom="@+id/gpio_2"
+              android:layout_marginRight="17dp"
+              android:layout_toLeftOf="@+id/cbw2" />
+
+          <TextView
+              android:id="@+id/textView7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/textView8"
+              android:layout_alignBottom="@+id/textView8"
+              android:layout_alignLeft="@+id/cbr2"
+              android:text="READ"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:textColor="#FF9933CC" />
+
+          <CheckBox
+              android:id="@+id/cbw3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/cbw2"
+              android:layout_below="@+id/cbr2" />
+
+          <CheckBox
+              android:id="@+id/cbw6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/cbw3"
+              android:layout_below="@+id/gpio_3" />
+
+          <CheckBox
+              android:id="@+id/cbw7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/gpio_7"
+              android:layout_alignBottom="@+id/gpio_7"
+              android:layout_alignLeft="@+id/cbw6" />
+
+          <CheckBox
+              android:id="@+id/cbw12"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/cbr12"
+              android:layout_alignBottom="@+id/cbr12"
+              android:layout_alignLeft="@+id/cbw7" />
+
+          <CheckBox
+              android:id="@+id/cbw13"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/cbr13"
+              android:layout_alignBottom="@+id/cbr13"
+              android:layout_toRightOf="@+id/cbr2" />
+
+
+          <CheckBox
+              android:id="@+id/cbw14"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/cbr14"
+              android:layout_alignBottom="@+id/cbr14"
+              android:layout_toRightOf="@+id/cbr2" />
+
+          <TextView
+              android:id="@+id/textView6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_below="@+id/textView5"
+              android:text="       GPIO1 PINS"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#FFFF4444" />
+
+          <Switch
+              android:id="@+id/wd"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/textView4"
+              android:layout_alignBottom="@+id/textView4"
+              android:layout_alignRight="@+id/textView8" />
+
+          <TextView
+              android:id="@+id/textView4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignRight="@+id/led3"
+              android:layout_below="@+id/led4"
+              android:layout_marginTop="35dp"
+              android:text="WATCHDOG"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:textColor="#FFFF8800" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_below="@+id/gpio_15" />
+
+          <CheckBox
+              android:id="@+id/cbr15"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/gpio_15"
+              android:layout_alignLeft="@+id/cbr13" />
+
+          <CheckBox
+              android:id="@+id/cbw15"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/cbr15"
+              android:layout_alignBottom="@+id/cbr15"
+              android:layout_alignLeft="@+id/cbw14" />
+
+ 
+
+          <TextView
+              android:id="@+id/textView9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_alignRight="@+id/textView3"
+              android:text=""
+              android:layout_below="@+id/gpio_15"
+              android:textAppearance="?android:attr/textAppearanceLarge" />
+         <TextView
+              android:id="@+id/value"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBaseline="@+id/textView3"
+              android:layout_centerHorizontal="true"
+             
+              
+              android:textColor="#FFAA66CC"
+              android:text="Medium Text"
+              android:textSize="20dp"
+               />
+              
+              
+                    
+         
+
+         <TextView
+             android:id="@+id/textView10"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+             android:layout_toLeftOf="@+id/textView3"
+             android:text=""
+             android:textColor="#FFAA66CC"
+             
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             
+             android:layout_below="@+id/gpio_15"
+             android:layout_marginTop="62dp"
+             android:text="  Read pin value:"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#FFFFFFFF" />
+
+    </RelativeLayout>
+
+</ScrollView>
