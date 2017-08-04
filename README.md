@@ -37,7 +37,7 @@ As mentioned above, we use TI's StarterWare software package to develop Beaglbon
 •	Download the Beaglebone Accessory patch to StarterWare.
 •	Apply the patch.
     #> cd <StarterWare 02.00.00.07>
-    #> patch -p1< <patch to patch directory>/adk_patch/0001-Add-beaglebone-      Accessory-support.patch	
+    #> patch -p1< <patch to patch directory>/adk_patch/0001-Add-beaglebone-      Accessory-support.patch
 
 3. Building Bootloader
 Use below commands to build the StarterWare bootloader, this will generate boot_ti.bin image at <Path to StarterWare code>/binary/armv7a/gcc/am335x/beaglebone/bootloader/Release
